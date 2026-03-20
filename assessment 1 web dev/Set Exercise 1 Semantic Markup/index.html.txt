@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Chip Cookies</title>
+</head>
+<body>
+    <!-- Site header -->
+    <header style="background-color: #d3d3d3; padding: 20px;">
+        <h1>Cooking with Andy!</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Browse</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Recipe article -->
+        <article>
+            <header>
+                <h2>Chocolate Chip Cookies</h2>
+                <p>Delicious homemade cookies with gooey chocolate chips!</p>
+            </header>
+
+            <!-- Ingredients section -->
+            <section aria-labelledby="ingredients-heading">
+                <h2 id="ingredients-heading">Ingredients</h2>
+                <ul>
+                    <li>2 1/4 cups flour</li>
+                    <li>1/2 teaspoon baking soda</li>
+                    <li>1 cup unsalted butter, softened</li>
+                    <li>1/2 cup granulated sugar</li>
+                    <li>1 cup packed brown sugar</li>
+                    <li>1 teaspoon vanilla extract</li>
+                    <li>2 large eggs</li>
+                    <li>2 cups semisweet chocolate chips</li>
+                </ul>
+            </section>
+
+            <!-- Recipe note -->
+            <aside style="background-color: #d3d3d3; padding: 20px;">
+                <p>
+                    If you don't have eggs, you can use a suitable egg substitute like applesauce,
+                    mashed bananas, or yogurt. Use 1/4 cup of the substitute for each egg in the recipe.
+                </p>
+            </aside>
+
+            <!-- Instructions section -->
+            <section aria-labelledby="instructions-heading">
+                <h2 id="instructions-heading">Instructions</h2>
+                <ol>
+                    <li>Preheat your oven to 190°C.</li>
+                    <li>In a small bowl, mix the flour and baking soda. Set aside.</li>
+                    <li>
+                        In a large mixing bowl, cream together the softened butter, granulated sugar,
+                        brown sugar, and vanilla extract until smooth.
+                    </li>
+                    <li>Add the eggs one at a time, beating well after each addition.</li>
+                    <li>Gradually add the flour mixture to the wet ingredients, mixing until well combined.</li>
+                    <li>Stir in the chocolate chips.</li>
+                    <li>Drop rounded tablespoons of dough onto ungreased baking sheets.</li>
+                    <li>Bake in the oven for 8-10 minutes or until the edges are golden brown.</li>
+                    <li>
+                        Allow the cookies to cool on the baking sheets for a few minutes before
+                        transferring them to wire racks to cool completely.
+                    </li>
+                </ol>
+            </section>
+        </article>
+    </main>
+
+    <!-- Site footer -->
+    <footer style="background-color: #d3d3d3; padding: 20px;">
+        <p>Cooking With Andy &copy; 2024</p>
+    </footer>
+</body>
+</html>
