@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J's Gallery</title>
+    <style>
+        /* Page */
+        body {
+            margin: 0;
+            background-color: #d3d3d3;
+            font-family: serif;
+            color: #000;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 20px 20px 10px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 0 0 20px;
+        }
+
+        nav a {
+            margin: 0 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Intro section */
+        main {
+            width: 100%;
+        }
+
+        .intro {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            padding: 10px 24px 20px;
+        }
+
+        .intro-text {
+            flex: 1;
+            font-size: 1.1rem;
+            line-height: 1.35;
+        }
+
+        .intro-image {
+            flex: 0 0 43%;
+        }
+
+        .intro-image img {
+            display: block;
+            width: 100%;
+            height: 430px;
+            object-fit: cover;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .gallery-item {
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery-item video,
+        .gallery-item img {
+            display: block;
+            width: 100%;
+            height: 310px;
+            object-fit: cover;
+        }
+
+        /* First row */
+        .large {
+            flex: 0 0 60%;
+        }
+
+        .small {
+            flex: 0 0 40%;
+        }
+
+        /* Second row */
+        .medium-left {
+            flex: 0 0 35%;
+        }
+
+        .medium-right {
+            flex: 0 0 65%;
+        }
+
+        /* Third row */
+        .wide {
+            flex: 0 0 60%;
+        }
+
+        .narrow {
+            flex: 0 0 40%;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .intro {
+                flex-direction: column;
+            }
+
+            .intro-image,
+            .large,
+            .small,
+            .medium-left,
+            .medium-right,
+            .wide,
+            .narrow {
+                flex: 0 0 100%;
+            }
+
+            .intro-image img,
+            .gallery-item video,
+            .gallery-item img {
+                height: 260px;
+            }
+
+            nav a {
+                margin: 0 15px;
+            }
+
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>J's Gallery</h1>
+        <nav aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <article class="intro-text">
+                <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Praesent mollis
+                    adipiscing per id libero libero. Tempus pretium netus molestie scelerisque
+                    facilisis tristique volutpat ultricies. Nostra ligula ac pulvinar rutrum non
+                    rhoncus mauris facilisi. Quisque maximus commodo sollicitudin, montes
+                    congue imperdiet. Est malesuada vivamus vestibulum ante aenean class.
+                    Per integer aptent ullamcorper sagittis posuere dignissim morbi scelerisque.
+                    Fringilla primis sagittis lorem erat integer; vulputate nullam. Porta purus
+                    habitant id fermentum nec ex, proin mauris sem.
+                </p>
+
+                <p>
+                    Lectus ultrices nibh lobortis tempus facilisis sit conubia taciti. Non torquent
+                    amet nibh elit ante fermentum praesent cras. Et suspendisse egestas eros
+                    erat aptent sollicitudin. Nulla tortor purus posuere auctor himenaeos
+                    malesuada. Turpis phasellus enim venenatis aliquam pellentesque senectus,
+                    id ultrices. Praesent tellus consequat phasellus cubilia mattis mauris
+                    natoque litora. Fringilla cursus montes inceptos nec venenatis platea.
+                </p>
+            </article>
+
+            <figure class="intro-image">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="A brown cow standing on a beach">
+            </figure>
+        </section>
+
+        <section class="gallery" aria-label="Gallery media">
+            <figure class="gallery-item large">
+                <video controls>
+                    <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </figure>
+
+            <figure class="gallery-item small">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Foggy road lights at night">
+            </figure>
+
+            <figure class="gallery-item medium-left">
+                <img src="https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?auto=format&fit=crop&w=1200&q=80" alt="Vintage camera close-up">
+            </figure>
+
+            <figure class="gallery-item medium-right">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="Snowy mountain landscape with trees">
+            </figure>
+
+            <figure class="gallery-item wide">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Rolling hills and landscape">
+            </figure>
+
+            <figure class="gallery-item narrow">
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Old building with parked cars">
+            </figure>
+        </section>
+    </main>
+</body>
+</html>
